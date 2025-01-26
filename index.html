@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Página HTML com CSS Incorporado e Estilos Personalizados</title>
+
+    <style>
+      body {
+        text-align: center;
+      }
+      h2 {
+        color: rgb(116, 22, 116);
+        text-decoration: underline;
+      }
+      #posicao {
+        margin-left: 40px;
+      }
+      #espacamento {
+        letter-spacing: 5px;
+      }
+      #estilo {
+        font-style: italic;
+      }
+      #linha {
+        line-height: 40px;
+      }
+      .caixaP {
+        width: 180px;
+        height: 180px;
+        border: 2px solid red;
+        border-radius: 6px;
+        background-color: rgb(229, 208, 160);
+        margin-bottom: 20px;
+      }
+      .caixaM {
+        width: 300px;
+        height: 200px;
+        border: 3px solid rgb(114, 112, 112);
+        border-radius: 6px;
+        background-color: rgb(241, 194, 230);
+        margin-bottom: 20px;
+      }
+      .caixaG {
+        width: 250px;
+        height: 300px;
+        border: 3px solid rgb(21, 7, 219, 0.548);
+        border-radius: 6px;
+        background-color: rgba(167, 214, 252, 0.986);
+        margin-bottom: 20px;
+      }
+      #caixa {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="posicao">
+      <div class="caixaP" id="caixa">
+        <h2>Caixa Pequena</h2>
+        <p id="espacamento">
+          Três caixas configuradas com tamanhos, formas e cores à sua escolha.
+        </p>
+      </div>
+      <div class="caixaM" id="caixa">
+        <h2>Caixa Média</h2>
+        <p id="estilo">
+          ID's e classes em todas elas para definir estilos distintos na cor de
+          fundo e padronizados nos demais atributos solicitados.
+        </p>
+      </div>
+      <div class="caixaG" id="caixa">
+        <h2>Caixa Grande</h2>
+        <p id="linha">
+          Certifique-se também de remover qualquer vínculo pré-existente entre o
+          HTML e outros arquivos CSS, caso estejam conectados na IDE.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
